@@ -1,5 +1,228 @@
-\documentclass{article}
+\documentclass[11pt, a4paper]{report}
+
+\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{enumerate}
+\usepackage{eurosym}
+\usepackage{graphicx}
+
+\renewcommand*\rmdefault{ptm}
+\renewcommand\thesection{\arabic{section}}
+
+\usepackage[a4paper]{geometry}
+\usepackage{listings, lstautogobble}
+\usepackage{color}
+
+\usepackage{pdfpages}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  autogobble=true
+}
+\geometry{top=3cm, bottom=3cm, left=3cm, right=3cm}
+\graphicspath{ {images/} }
+
 \begin{document}
-(Type your content here.)
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+	\begin{titlepage}
+        \raggedleft
+        {
+        	\Large Universidad de Valladolid \\
+        	E.T.S Ingeniería Informática \\
+        	Grado en Ingeniería Informática\\
+        }
+        \vspace{4cm}
+        \centering
+        {
+        	\bf \LARGE Curso 2016/2017 \\
+        	 Profesión y Sociedad \\
+            
+             \vspace{1cm}
+        	 Renovarse o morir: \\
+             El ciclo de vida de un informático\\
+        }
+        \vspace{10cm}
+        \raggedleft
+        {
+        	\Large 
+            Amigo Alonso, Alberto \\
+        	Delgado Álvarez, Sergio \\
+            García Prado, Sergio \\
+            Iglesias Cortijo, David \\
+        }
+
+  \end{titlepage}
+  
+	\newpage
+    \tableofcontents
+%----------------------------------------------------------------------------------------
+%	TEXT
+%----------------------------------------------------------------------------------------
+
+  	\newpage
+  	\section{Introducción}
+    	\paragraph{}
+		Hoy en día, 
+    
+    
+    \section{Ciclo de vida de un informático}
+    	\paragraph{}
+        En este apartado se exponen las etapas generales que una persona que se dedique al mundo de las tecnologías de la información y la comunicación suele superar. Si bien existen casos concretos en los cuales no se siguen dichas etapas, se han identificado estas como generales. Por tanto, se describen más a fondo a continuación, desde el comienzo con el interés por la tecnología hasta la búsqueda de la renovación para no quedarse obsoleto o perder precisamente la motivación adquirida en la primera etapa:
+
+
+    	\subsection{Interés por la tecnología}
+        	\paragraph{}
+            Es común que hoy en día muchas personas sientan interés por la tecnología, ya sea con fines recreativos o de productividad. Dado que acceder a productos tecnológicos cada vez tiene una barrera económica más baja, hoy en día casi cualquier persona puede acceder a ello. Esto es algo que se contrapone al pasado, donde era mucho más complicado y la principal perspectiva era de mejorar la productividad, sobre todo desde el punto de vista laboral.
+            
+            \paragraph{}
+			Centrándonos más en la perspectiva actual, se exponen las principales vías por las cuáles comienza el interes hacia esta industria. Un hecho a destacar en este punto es que el mayoritariamente surge en edades tempranas, principalmente bajo una perspectiva lúdica. Muchas personas se sienten atraidas por el mundo de los videojuegos, la simplicidad de tareas cuando se realizan con ayuda telemática frente a métodos tradicionales o la curiosidad por entender cómo se produce "la magia" dentro de un ordenador. 
+            \paragraph{}
+            Si bien, las dos primeras vías son un reclamo para muchos que terminan dedicandose a ello a nivel profesional, muchas veces el desconocimiento entre el uso y la creación de recursos informáticos es un problema, que luego se traduce en fracaso y pérdida del interés en fases siguientes. La conclusión obtenida sobre esta problemática es que está muy condicionada por el desconocimiento debido a la temprana edad de esta disciplina respecto de otras. Un ejemplo que ninguno de nosotros dudaría en diferenciar perfectamente es [HAY QUE PENSAR UNO]
+ 
+        \subsection{Formación y Obtención de conocimientos}
+        	\paragraph{}
+            La siguiente fase general por la que toda persona que pretenda dedicarse profesionalmente a este sector debe superar es el periodo de formación inicial. Debido a que esta etapa tiene muchos posibles caminos y mecanismos, según las perspectivas y objetivos de cada individuo realizaremos una clasificación de las principales alternativas: 
+            
+            
+			\subsubsection{Formación autodidacta}
+        		
+                \paragraph{}
+                Existen muchos casos en el sector de tecnologías de la información en que personas que trabajan en cargos importantes no tienen títulos académicos que abalen su cualificación. La razón de que esto sea así principalmente es algo derivado de la corta edad del sector. Esto no quiere decir que dichas personas no posean los conocimientos necesarios (posiblemente tengan titulaciones de disciplinas semejantes). Las titulaciones en estudios de Informática no se crean en España hasta la década de los 70.
+        	    
+                \paragraph{}
+                Otro de los detalles importantes por los que hay personas que se deciden por esta alternativa es que el sector en España no está regulado. Lo que se traduce en que para realizar proyectos o actividades que normalmente requerirían de un certificado, debido a los riesgos que implicaría el mal funcionamiento del sistema, no es necesario legalmente poseer ningún tipo de acreditación.
+                
+                \paragraph{}
+				Dejando de lado el tema de las razones por las que escoger esta alternativa, existen muchos recursos para adquirir conocimientos de manera autodidacta, tales como libros, recursos online, documentación específica de determinadas tecnologías, etc. Se comentará más en profundidad el conjunto de recursos disponibles en la sección \ref{subsec:RecursosDisponibles} en la página \pageref{subsec:RecursosDisponibles}.
+
+    		\subsubsection{Formación profesional}
+        		
+                \paragraph{}
+                Las titulaciones de formación profesional en el Sistema Educativo Español se dividen en tres grupos según el nivel de cualificación requerido para su acceso:
+                
+                \begin{itemize}
+					
+                    \item \underline{Programa de Cualificación Profesional Inicial:} 
+                    Están orientados a personas sin Educación Secundaria Obligatoria, por lo que sirven para conseguir dicho título junto con la posibilidad de acceder al siguiente nivel de titulación.
+                    
+                    \item \underline{Ciclo Formativo de Grado Medio:} 
+                    Para acceder a esta titulación es necesario poseer el título de Educación Secundaria Obligatoria. Al finalizar estos estudios se obtiene el título de Técnico en la correspondiente titulación.
+                    
+                    \item \underline{Ciclo Formativo de Grado Superior:}
+                   	Se puede optar al acceso de este nivel formativo por diferentes vías: la posesión del título de Bachillerato o de una titulación orientada hacia la misma rama de estudio de un Ciclo Formativo de Grado Medio. finalizar estos estudios se obtiene el título de Técnico Superior en la correspondiente titulación. Terminando estos estudios, posibilitan el acceso a la universidad sin necesidad de hacer la prueba de acceso a la universidad y convalidando créditos en las distintas carreras.
+				
+                \end{itemize}
+
+        		\paragraph{}
+				Este tipo de titulaciones generalmente están orientadas la formación en trabajos o tecnologías específicas. Su duración es de 2 cursos lectivos, centrando el último periodo en la realización de prácticas en un entorno laboral que facilite la inserción del titulado al mundo laboral.
+
+        	
+    		\subsubsection{Formación universitaria}
+        		\paragraph{}
+    		
+            \subsubsection{Formación post-universitaria}
+        		\paragraph{}
+
+        \subsection{Mundo laboral}
+        	\paragraph{}
+            
+        \subsection{Renovación}
+        	\paragraph{}
+            
+            
+    \section{¿Cuándo es necesario renovarse?}
+    
+    	\subsection{Situación laboral}
+        	\paragraph{}
+            
+             \subsubsection{Desarrollador}
+        		\paragraph{}
+        	
+    		\subsubsection{Administrador de sistemas}
+        		\paragraph{}
+        	
+    		\subsubsection{Profesor/Investigador}
+        		\paragraph{}
+                
+                
+    	\subsection{Nuevos retos personales}
+        	\paragraph{}
+
+
+
+		\subsection{Ritmo de evolución en el sector}
+        	\paragraph{}
+			La informática es un sector que evoluciona a un ritmo vertiginoso, lo que implica que los expertos en el sector tengan que adaptarse a este ritmo de avances y evolucionar junto a ella. Es decir, deben renovarse.\\
+            
+            Desde las tarjetas perforadas, el lenguaje ensamblador o el Z1 de Konrad Zuse hasta los IDE's, lenguajes de alto nivel y supercomputadores actuales, la informática no para de evoucionar y es necesaria la renovación de los conocimientos que los expertos tienen de ella. Hace unos años cuando comenzaba su auge, era sencillo mantenerse al corriente de los diferentes aspectos de la informática, ya que exitía, por ejemplo, un libro de referencia para las bases de datos, otro para los sistemas operativos, etcetera. Hoy en día es practicamente imposible estar al tanto de todos estos aspectos, ya que hay tal volumen de información que se amplía día a día, que es difícil contrastarla y saber de donde ''aprender'' y de donde no.\\
+            
+            
+
+		\subsection{Opiniones}
+        	\paragraph{}
+            
+            
+    \section{El proceso de renovación}
+    
+    	\subsection{Recursos disponibles}
+        \label{subsec:RecursosDisponibles}
+
+    		\paragraph{} 
+            
+        	\subsubsection{Libros}
+        		\paragraph{} 
+
+    		\subsubsection{Cursos}
+        		\paragraph{}
+        	
+    		\subsubsection{Recursos online}
+        		\paragraph{}
+        	
+    		\subsubsection{Vuelta a la universidad}
+        		\paragraph{}
+        	
+        
+                
+    \section{Consecuencias de no renovarse}
+    	\paragraph{}
+        
+        
+        
+                
+    \section{Conclusiones}
+        
+
+    
+%----------------------------------------------------------------------------------------
+%	Bibliographic references
+%----------------------------------------------------------------------------------------
+	\begin{thebibliography}{9}
+
+		\bibitem{wikipedia}
+		Wikipedia
+        
+	\end{thebibliography}
+  
 \end{document}
+
+
